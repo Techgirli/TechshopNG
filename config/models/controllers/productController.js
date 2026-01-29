@@ -1,5 +1,10 @@
 const Product = require("../models/productModel");
 
+exports.getProducts = (req, res) => {
+  res.json({ message: "Products fetched successfully" });
+};
+
+
 exports.getProducts = async (req, res) => {
   try {
     const products = await Product.getAll();
