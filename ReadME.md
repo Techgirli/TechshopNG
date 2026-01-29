@@ -40,3 +40,14 @@ Implement a DevSecOps pipeline that ensures automated builds, continuous integra
 * Security & Scanning	SonarQube, Trivy, OWASP ZAP
 * Monitoring & Logging	Prometheus, Grafana, ELK Stack
 * Cloud	AWS (VPC, S3, IAM, EC2, RDS, EKS, CloudWatch)
+
+# Project Structure
+```
+/techshop-ng
+├─ frontend/
+├─ backend/
+├─ infra/   # Terraform files
+├─ ci-cd/   # GitHub Actions workflows
+├─ docs/    # Project documentation
+└─ tests/   # Unit & integration tests
+```
