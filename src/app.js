@@ -6,8 +6,9 @@ const productRoutes = require("./routes/productRoutes.js");
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(express());
 app.use(express.json());
+app.use(cors())
 
 app.use("/api/products", productRoutes);
 
