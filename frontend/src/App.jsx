@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./index.css";
+fetch('/api/your-endpoint')   
 
 function Navbar() {
   return (
