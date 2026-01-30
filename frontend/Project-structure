@@ -1,0 +1,9 @@
+frontend/
+├─ src/
+│   ├─ components/
+│   │   └─ ProductList.js
+│   ├─ App.js
+│   ├─ index.js
+│   └─ api.js
+├─ package.json
+└─ .env
