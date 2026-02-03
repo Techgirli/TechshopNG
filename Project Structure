@@ -1,0 +1,55 @@
+techshopng/
+│
+├── frontend/                
+│   ├── src/
+│   ├── Dockerfile
+│   └── nginx.conf
+│
+├── backend/                 
+│   ├── src/
+│   ├── Dockerfile
+│   └── requirements/package files
+│
+├── infra/                   
+│   │   ├── modules/
+│   │   │   ├── vpc/
+│   │   │   ├── eks/
+│   │   │   ├── rds/
+│   │   │   └── iam/
+│   │   ├── envs/
+│   │   │   ├── dev/
+│   │   │   │   ├── main.tf
+│   │   │   │   ├── variables.tf
+│   │   │   │   └── terraform.tfvars
+│   │   │   └── prod/
+│   │   └── backend.tf
+│   │
+│   ├── kubernetes/
+│   │   ├── frontend/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
+│   │   │   └── ingress.yaml
+│   │   ├── backend/
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
+│   │   │   └── configmap.yaml
+│   │   └── namespaces.yaml
+│   │
+│   ├── ansible/
+│   │   ├── inventory/
+│   │   │   └── aws_ec2.yaml
+│   │   ├── roles/
+│   │   │   ├── docker/
+│   │   │   ├── kube-tools/
+│   │   │   └── node-hardening/
+│   │   └── playbooks/
+│   │       └── bootstrap-eks-nodes.yml
+│   │
+│   └── aws/
+│       ├── iam-policies/
+│       ├── ecr/
+│       └── s3/
+│
+├── .github/workflows/        # CI/CD (optional but recommended)
+│
+└── README.md
