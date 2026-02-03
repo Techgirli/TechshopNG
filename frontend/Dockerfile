@@ -1,9 +1,9 @@
-FROM node:18-alpine AS build
+FROM node:20.19-alpine AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build && ls -la dist  # Debug: check if dist is created
+RUN npm run build
 
 FROM nginx:alpine
 COPY --from=build /app/dist /usr/share/nginx/html
